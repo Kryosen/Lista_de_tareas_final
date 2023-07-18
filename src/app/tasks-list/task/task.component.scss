@@ -1,0 +1,20 @@
+li {
+  height: 3rem;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  background-color: var(--box-tasks-color);
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 4px;
+}
+
+.checkedClass {
+  text-decoration: line-through;
+}
+
+.checkBoxText {
+  font-size: 24px;
+  flex: 1;
+  color: var(--body-font-color);
+}

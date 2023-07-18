@@ -1,0 +1,39 @@
+.darkToggleLabel {
+  margin-top: 0.5rem;
+  margin-right: 0.5rem;
+  position: relative;
+  width: 48px;
+  height: 24px;
+  display: block;
+  background: var(--box-tasks-color);
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: inset 0px 5px 15px rgba(0, 0, 0, 0.3),
+    inset 0px -5px 15px rgba(255, 255, 255, 0.2);
+
+  &:after {
+    content: "";
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    background: var(--body-background-color);
+    border-radius: 4px;
+    top: 2px;
+    left: 2px;
+    transition: 0.5s;
+  }
+}
+
+.darkToggleInput:checked ~ .darkToggleLabel:after {
+  left: 46px;
+  transform: translateX(-100%);
+  background: var(--body-font-placeholder-color);
+}
+
+.darkToggleInput:checked + .darkToggleLabel {
+  background: var(--box-add-task-color);
+}
+
+.darkToggleInput {
+  display: none;
+}

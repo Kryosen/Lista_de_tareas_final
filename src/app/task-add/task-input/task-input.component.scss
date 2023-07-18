@@ -1,0 +1,21 @@
+.inputList {
+  width: 27.5rem;
+  height: 3rem;
+  border: 0px;
+  padding: 0;
+  margin-right: 0.5rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 24px;
+  background-color: transparent;
+  color: var(--body-font-color);
+
+  &:focus {
+    outline-style: none;
+    box-shadow: none;
+  }
+
+  &::placeholder {
+    color: var(--body-font-placeholder-color);
+  }
+}

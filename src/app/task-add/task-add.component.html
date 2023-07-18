@@ -1,0 +1,7 @@
+<div class="divCaja">
+  <app-task-input
+    #inputValue
+    (changeall)="listenChange($event)"
+  ></app-task-input>
+  <app-button-add (alert)="inputValue.makeChange()"></app-button-add>
+</div>

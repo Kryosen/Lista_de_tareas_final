@@ -6,5 +6,10 @@
     [ngClass]="{ checkedClass: task.checkboxStatus }"
     >{{ task.value }}</label
   >
-  <app-button-delete (click)="deleteIndex(i)"></app-button-delete>
+  <app-button-delete [btnName]="'content_paste'"></app-button-delete>
+  <app-button-delete [btnName]="'share'"></app-button-delete>
+  <app-button-delete
+    (click)="deleteIndex(i)"
+    [btnName]="'delete'"
+  ></app-button-delete>
 </li>

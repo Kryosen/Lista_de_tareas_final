@@ -27,7 +27,7 @@
 .darkToggleInput:checked ~ .darkToggleLabel:after {
   left: 46px;
   transform: translateX(-100%);
-  background: var(--body-font-placeholder-color);
+  background: var(--nightmode-color);
 }
 
 .darkToggleInput:checked + .darkToggleLabel {
@@ -36,4 +36,19 @@
 
 .darkToggleInput {
   display: none;
+}
+
+.modeIcon {
+  float: right;
+  padding-top: 1px;
+  padding-right: 2px;
+  font-size: 20px;
+  color: var(--body-border-color);
+
+  &::after {
+    content: "sunny";
+    float: left;
+    padding-right: 4px;
+    color: var(--body-border-color);
+  }
 }

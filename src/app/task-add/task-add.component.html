@@ -2,6 +2,10 @@
   <app-task-input
     #inputValue
     (changeall)="listenChange($event)"
+    class="wjaat"
   ></app-task-input>
-  <app-button-add (alert)="inputValue.makeChange()"></app-button-add>
+  <app-button-add
+    (alert)="inputValue.makeChange()"
+    class="wajava"
+  ></app-button-add>
 </div>

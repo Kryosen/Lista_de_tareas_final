@@ -1,4 +1,6 @@
 .divCaja {
+  display: flex;
+  flex-direction: row;
   text-align: center;
   position: sticky;
   top: 1rem;
@@ -8,4 +10,10 @@
   margin: auto;
   z-index: 1;
   border-radius: 4px;
+}
+
+.wjaat {
+}
+
+.wajava {
 }

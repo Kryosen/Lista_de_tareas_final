@@ -36,3 +36,9 @@ body {
   --backdrop-filter-color: blur(10px);
   --nightmode-color: rgb(137, 137, 137);
 }
+
+@media (max-width: 512px) {
+  body {
+    padding: 0rem 1rem;
+  }
+}

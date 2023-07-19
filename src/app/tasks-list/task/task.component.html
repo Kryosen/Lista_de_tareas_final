@@ -1,5 +1,8 @@
 <li *ngFor="let task of tasks; let i = index">
-  <app-chech-box (newItemEvent)="checkboxStatus($event, i)"></app-chech-box>
+  <app-chech-box
+    (newItemEvent)="checkboxStatus($event, i)"
+    class="checkboxContainer"
+  ></app-chech-box>
   <label
     for="task1"
     class="checkBoxText"

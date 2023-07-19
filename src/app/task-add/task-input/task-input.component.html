@@ -6,4 +6,5 @@
   placeholder=" Add a new task here"
   name="inputTask"
   [(ngModel)]="inputValue"
+  (keydown.enter)="makeChange()"
 />
